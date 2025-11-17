@@ -23,28 +23,9 @@
 
 
 ;Elimina un elemento de una lista
-(define elimina
-  (lambda(lst elemento)
-   (if (null? lst) lst
-    (if (= (car lst) elemento)
-        (cdr lst)
-        (append (list (car lst)) (elimina (cdr lst) elemento))
-     )
-    )
-  )
-)
-; (elimina '(1 2 3) 2)
-
-(define estaEnLista
-  (lambda (lst elemento)
-    (if (null? lst) #f
-        (if (= (car lst) elemento) #t
-            (estaEnLista (cdr lst) elemento)
-            )
-        )
-    )
-  )
-;(estaEnLista '(1 2 3) 2)
+;(define elimina
+; (lambda(elemento, lst)
+; (if (null? lst)
 
 
 ;008. Elimina duplicados de una lista

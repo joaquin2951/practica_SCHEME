@@ -164,7 +164,6 @@
   (cond
       ( (null? lstArboles) '() )
       ( (esVacio? (car lstArboles)) (recorridoHorizontal (cdr lstArboles)) )
-      ;( (esHoja?  (car lstArboles)) (list (Raiz (car lstArboles))))  NO HACE FALTA PENSAR ESTA CONDICION, SE SATISFACE CON LA DE ABAJO
       ( else (append (list (Raiz (car lstArboles))) (recorridoHorizontal (append (cdr lstArboles) (list (AI (car lstArboles))) (list (AD (car lstArboles))) )) ) )
    )
  )

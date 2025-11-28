@@ -1,0 +1,11 @@
+;Para representar una matriz en Scheme se utilizará una lista de listas, en donde cada sublista 
+;representa una fila de la matriz. 
+;Se solicita desarrollar las siguientes funciones: 
+;a) (fila matriz n), cuyo resultado es una lista que contiene los elementos de la fila enésima de la 
+;matriz pasada como argumento. 
+;b) (columna matriz n), cuyo resultado es una lista que contiene los elementos de la columna 
+;enésima de la matriz pasada como argumento. 
+;c) (cuadradoMagico matriz), cuyo resultado es un valor booleano el cual será verdadero si la 
+;matriz corresponde a un “cuadrado mágico”. Para ser un cuadrado mágico la matriz debe ser una 
+;matriz cuadrada y cumplir la condición que la suma  de los elementos de cada fila y columna con 
+;igual subíndice sea equivalente. Por ejemplo, sea la matriz siguiente: 
